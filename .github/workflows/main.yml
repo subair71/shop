@@ -20,7 +20,7 @@ jobs:
         with:
           flutter-version: '3.0.0'
       - run: flutter pub get
-      - run: flutter run
+      - run: flutter run -d chrome
       - run: flutter build apk --debug --split-per-abi
       - name: Push to Release
         uses: ncipollo/release-action@v1
